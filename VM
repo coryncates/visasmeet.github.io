@@ -2,22 +2,7 @@
 <html>
 <head>
   <title>VisasMeet</title>
-  <style>
-    /* Your existing styles remain the same */
-
-    /* Add some styles for the new sections */
-    .profile {
-      /* Add styles for profile cards */
-    }
-
-    .search {
-      /* Add styles for search box */
-    }
-
-    .messages {
-      /* Add styles for messages */
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
   <div class="header">
@@ -37,19 +22,41 @@
   <div id="content">
     <div id="home">
       <!-- Home page content goes here -->
+      
+      <!-- Registration -->
+      <form id="registrationForm">
+        <label for="usernameInput">Username:</label>
+        <input type="text" id="usernameInput" name="usernameInput"><br>
+        <label for="passwordInput">Password:</label>
+        <input type="password" id="passwordInput" name="passwordInput"><br>
+        <input type="submit" value="Register">
+      </form>
+      
+      <!-- Login -->
+      <form id="loginForm">
+        <label for="loginUsernameInput">Username:</label>
+        <input type="text" id="loginUsernameInput" name="loginUsernameInput"><br>
+        <label for="loginPasswordInput">Password:</label>
+        <input type="password" id="loginPasswordInput" name="loginPasswordInput"><br>
+        <input type="submit" value="Login">
+      </form>
+
+      <div id="displayDateTime"></div>
     </div>
-    <div id="search" class="search">
-      <!-- Search function goes here -->
-    </div>
-    <div id="profile" class="profile">
-      <!-- User profile goes here -->
-    </div>
+    
+    <!-- Rest of the content -->
+
     <div id="messages" class="messages">
-      <!-- Messages go here -->
+      <!-- Chatbox -->
+      <div id="chatbox"></div>
+      <form id="messageForm">
+        <input type="text" id="messageInput">
+        <input type="submit" value="Send">
+      </form>
     </div>
-    <div id="groups">
-      <!-- Groups content goes here -->
-    </div>
+
+    <!-- Rest of the content -->
+    
   </div>
 
   <div class="footer">
@@ -57,7 +64,7 @@
   </div>
 
   <script>
-    // JavaScript for the search function, messaging, etc. would go here
+    src="script.js"
   </script>
 
 </body>
