@@ -1,20 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VisasMeet</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>VisasMeet</title>
+  <style>
+    /* Your existing styles remain the same */
+
+    /* Add some styles for the new sections */
+    .profile {
+      /* Add styles for profile cards */
+    }
+
+    .search {
+      /* Add styles for search box */
+    }
+
+    .messages {
+      /* Add styles for messages */
+    }
+  </style>
 </head>
 <body>
-    <div id="chatbox">
-        <!-- Chat messages will go here -->
-    </div>
+  <div class="header">
+    <h1>Welcome to VisasMeet</h1>
+    <p>A Social Platform for Global Communities</p>
+  </div>
 
-    <form id="messageForm">
-        <input type="text" id="messageInput" placeholder="Type a message...">
-        <button type="submit">Send</button>
-    </form>
-    <script src="script.js"></script>
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#search">Search</a>
+    <a href="#profile">Profile</a>
+    <a href="#messages">Messages</a>
+    <a href="#groups">Groups</a>
+  </div>
+
+  <!-- Content goes here -->
+  <div id="content">
+    <div id="home">
+      <!-- Home page content goes here -->
+    </div>
+    <div id="search" class="search">
+      <!-- Search function goes here -->
+    </div>
+    <div id="profile" class="profile">
+      <!-- User profile goes here -->
+    </div>
+    <div id="messages" class="messages">
+      <!-- Messages go here -->
+    </div>
+    <div id="groups">
+      <!-- Groups content goes here -->
+    </div>
+  </div>
+
+  <div class="footer">
+    <p>Created by <a href="https://github.com/coryncates" target="_blank">coryncates</a>. Check the project repository on <a href="https://github.com/coryncates/visasmeet.github.io" target="_blank">GitHub</a>.</p>
+  </div>
+
+  <script>
+    // JavaScript for the search function, messaging, etc. would go here
+  </script>
+
 </body>
 </html>
