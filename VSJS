@@ -1,0 +1,26 @@
+// Code from first file
+var today = new Date();
+var day = today.getDay();
+var daylist = ["Sunday","Monday","Tuesday","Wednesday ","Thursday","Friday","Saturday"];
+var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+var dateTime = date+' '+time;
+document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
+
+// Code from second file
+const chatbox = document.querySelector('#chatbox');
+const messageForm = document.querySelector('#messageForm');
+const messageInput = document.querySelector('#messageInput');
+
+messageForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const message = messageInput.value.trim();
+    if (message !== '') {
+        const messageElement = document.createElement('p');
+        messageElement.textContent = message;
+        chatbox.appendChild(messageElement);
+        messageInput.value = '';
+        chatbox.scrollTop = chatbox.scrollHeight;
+    }
+});
