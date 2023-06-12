@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>VisasMeet</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="VMCSS.css">
 </head>
 <body>
   <div class="header">
@@ -64,7 +64,7 @@
   </div>
 
   <script>
-    src="script.js"
+    src="VSJS.js"
   </script>
 
 </body>
