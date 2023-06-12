@@ -3,6 +3,25 @@ website:
   description: 'A social platform designed for travelers, immigrants, international students, and expats.'
   welcome_message: 'Welcome to Visas Meet, a social platform designed for travelers, immigrants, international students, and expats. Here, you can meet, chat, network, date, and connect with people from all over the world. Whether you are in a new or foreign country, or simply looking to broaden your horizons, Visas Meet is the place for you.'
   logo: 'Link_to_your_logo_here'
+  google_analytics: 'Your_Google_Analytics_ID'
+  theme: 'jekyll-theme-cayman' # Changed to a more suitable theme
+  remote_theme: 'pages-themes/cayman@v0.1.1'
+  plugins:
+    - 'jekyll-remote-theme' 
+    - 'jekyll-avatar' 
+    - 'jekyll-mentions' 
+    - 'jekyll-paginate' # For pagination
+    - 'jekyll-seo-tag' # For SEO optimization
+    - 'jekyll-sitemap' # To generate a sitemap.xml for better SEO
+  collections:
+    profiles:
+      output: true
+      permalink: '/:collection/:path/'
+    posts:
+      output: true
+      permalink: '/:collection/:path/'
+  paginate: 5 # Posts per page
+  exclude: ["README.md", "Gemfile", "Gemfile.lock"]
   features:
     - name: 'Meet'
       description: 'Find other individuals in your area and connect with them.'
