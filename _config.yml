@@ -1,15 +1,22 @@
 title: Visas Meet
 description: A social platform for Travelers, Immigrants, International students, and Expats. Meet, chat, network, and find your community in a new or foreign country.
 show_downloads: true
-google_analytics:
-theme: jekyll-theme-leap-day
-remote_theme: pages-themes/leap-day@v0.2.0
+google_analytics: # Add your Google Analytics tracking ID here
+theme: jekyll-theme-cayman # Changed to a more suitable theme
+remote_theme: pages-themes/cayman@v0.1.1
 plugins:
-- jekyll-remote-theme # add this line to the plugins list if you already have one
-- jekyll-avatar # plugin to display GitHub user avatars
-- jekyll-mentions # plugin to mention users
+- jekyll-remote-theme 
+- jekyll-avatar 
+- jekyll-mentions 
+- jekyll-paginate # For pagination
+- jekyll-seo-tag # For SEO optimization
+- jekyll-sitemap # To generate a sitemap.xml for better SEO
 collections:
   profiles:
     output: true
     permalink: /:collection/:path/
-
+  posts:
+    output: true
+    permalink: /:collection/:path/
+paginate: 5 # Posts per page
+exclude: ["README.md", "Gemfile", "Gemfile.lock"]
