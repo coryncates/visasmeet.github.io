@@ -1,0 +1,29 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#chatbox {
+    width: 80%;
+    height: 80vh;
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+#messageForm {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#messageInput {
+    width: 70%;
+    padding: 10px;
+}
+
+#messageForm button {
+    width: 20%;
+    padding: 10px;
+    margin-left: 10px;
+}
