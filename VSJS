@@ -7,7 +7,6 @@ var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds(
 var dateTime = date+' '+time;
 document.getElementById("displayDateTime").innerHTML = dateTime + ' <br> Day :- ' + daylist[day];
 
-// Code from second file
 const chatbox = document.querySelector('#chatbox');
 const messageForm = document.querySelector('#messageForm');
 const messageInput = document.querySelector('#messageInput');
